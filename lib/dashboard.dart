@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:login_page_day_23/graph.dart';
+import 'analysis.dart';
+import 'report1.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -96,18 +99,8 @@ class DashBoard extends StatelessWidget {
                               children: [
                                 Image.asset("assets/analysis.png", width: 64.0),
                                 SizedBox(height: 10.0),
-                                Text("Analysis",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0)),
                                 SizedBox(height: 5.0),
-                                Text(
-                                  "",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w100),
-                                )
+                                analySis()
                               ],
                             ),
                           ),
@@ -127,20 +120,10 @@ class DashBoard extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               children: [
-                                Image.asset("assets/oil.png", width: 64.0),
+                                Image.asset("assets/report.png", width: 64.0),
                                 SizedBox(height: 10.0),
-                                Text("Diesel",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0)),
                                 SizedBox(height: 5.0),
-                                Text(
-                                  "",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w100),
-                                )
+                                Report_()
                               ],
                             ),
                           ),
@@ -226,9 +209,9 @@ class DashBoard extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               children: [
-                                Image.asset("assets/report.png", width: 64.0),
+                                Image.asset("assets/oil.png", width: 64.0),
                                 SizedBox(height: 10.0),
-                                Text("Report",
+                                Text("Oil",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
