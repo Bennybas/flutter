@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login_page_day_23/graph.dart';
 import 'analysis.dart';
 import 'report1.dart';
+import 'mach.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -66,18 +67,8 @@ class DashBoard extends StatelessWidget {
                               children: [
                                 Image.asset("assets/calendar.png", width: 64.0),
                                 SizedBox(height: 10.0),
-                                Text("Calendar",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0)),
                                 SizedBox(height: 5.0),
-                                Text(
-                                  "",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w100),
-                                )
+                                machine()
                               ],
                             ),
                           ),

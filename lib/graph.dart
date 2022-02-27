@@ -15,19 +15,19 @@ class _HomePageState extends State<HomePage> {
 
   _generateData() {
     var data1 = [
-      new Energy(1980, 'First Week', 70),
+      new Energy(1980, 'First Week', 50),
     ];
     var data2 = [
-      new Energy(1985, 'Sec Week', 100),
+      new Energy(1985, 'Sec Week', 70),
     ];
     var data3 = [
-      new Energy(1985, 'Third Week', 200),
+      new Energy(1985, 'Third Week', 90),
     ];
     var data4 = [
-      new Energy(1987, 'Forth Week', 200),
+      new Energy(1987, 'Forth Week', 100),
     ];
     var data5 = [
-      new Energy(1988, 'Fifth Week', 200),
+      new Energy(1988, 'Fifth Week', 150),
     ];
 
     _seriesData.add(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dashboard.dart';
 
 class Report extends StatefulWidget {
   final Widget child;
@@ -26,7 +27,7 @@ class _HomePageState extends State<Report> {
         measureFn: (Task task, _) => task.taskvalue,
         colorFn: (Task task, _) =>
             charts.ColorUtil.fromDartColor(task.colorval),
-        id: 'Air Pollution',
+        id: '',
         data: piedata,
         labelAccessorFn: (Task row, _) => '${row.taskvalue}',
       ),
